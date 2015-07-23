@@ -1,0 +1,8 @@
+name = "Creative Tech"
+description = "Module having custom alter for this site."
+core = 7.x
+project = creative_tech
+package = "Creative Tech"
+version = "7.x-1.0"
+core = "7.x"
+datestamp = "1432035162"
