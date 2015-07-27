@@ -273,6 +273,15 @@ function creative_tech_wysiwyg_editor_settings_alter(&$settings, $context) {
 ."var[class|dir<ltr?rtl|id|lang|onclick|ondblclick|onkeydown|onkeypress"
   ."|onkeyup|onmousedown|onmousemove|onmouseout|onmouseover|onmouseup|style"
   ."|title],"
-  ."section[class|id]";
+  ."section[align<center?justify?left?right|class|dir<ltr?rtl|id|lang|onclick"
+  ."|ondblclick|onkeydown|onkeypress|onkeyup|onmousedown|onmousemove"
+  ."|onmouseout|onmouseover|onmouseup|style|title],"
+  ."article[align<center?justify?left?right|class|dir<ltr?rtl|id|lang|onclick"
+  ."|ondblclick|onkeydown|onkeypress|onkeyup|onmousedown|onmousemove"
+  ."|onmouseout|onmouseover|onmouseup|style|title],"
+  ."article[class|id],"
+  ."time[cite|class|datetime|dir<ltr?rtl|id|lang|onclick|ondblclick|onkeydown"
+  ."|onkeypress|onkeyup|onmousedown|onmousemove|onmouseout|onmouseover"
+  ."|onmouseup|style|title]";
      }
 }

@@ -7,13 +7,15 @@ core = 7.x
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[navigation]     = 'Navigation'
-regions[header]         = 'Top Bar'
+;regions[navigation]    = 'Navigation'
+;regions[header]        = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
-regions[help]           = 'Help'
+;regions[help]          = 'Help'
 regions[content]        = 'Content'
+regions[content_bottom] = 'Content Bottom'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
+regions[footer_top] 	= 'Footer Top'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
@@ -143,13 +145,14 @@ exclude[css][] = 'modules/user/user.css'
 
 ; Include Stylesheets
 
-stylesheets[all][]   = css/responsive.css
-stylesheets[all][]   = css/animate.css
-stylesheets[all][]   = css/font-awesome.min.css
-stylesheets[all][]   = css/line-icons.min.css
-stylesheets[all][]   = css/prettyPhoto.css
-stylesheets[all][]   = css/presets/maincolor.css
-stylesheets[all][]   = css/style.css
+stylesheets[all][] = css/responsive.css
+stylesheets[all][] = css/animate.css
+stylesheets[all][] = css/font-awesome.min.css
+stylesheets[all][] = css/line-icons.min.css
+stylesheets[all][] = css/prettyPhoto.css
+stylesheets[all][] = css/presets/maincolor.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/timeline.css
 
 
 ;;;;;;;;;;;;;;;;;;;;;

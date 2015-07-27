@@ -105,7 +105,7 @@
   </nav> <!-- nav end -->
 </header>
 
-<section id="about-us" class=" contact-inner-page">
+<section id="about-us" class="contact-inner-page">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -132,8 +132,20 @@
         <?php print render($page['content']);?>
       </div>
     </div>
+    <?php if (!empty($page['content_bottom'])): ?>
+      <?php print render($page['content_bottom']); ?>
+    <?php endif; ?>
   </div>
 </section>
+
+<!-- Client section start -->
+<?php if (!empty($page['footer_top'])): ?>
+  <section id="client">
+    <div class="container">
+        <?php print render($page['footer_top']); ?>
+    </div>
+  </section>  
+<?php endif; ?>
 
 <footer id="footer">
   <div class="container">

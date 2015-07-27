@@ -108,6 +108,15 @@
 <?php print $messages; ?>
 <?php print render($page['content']); ?>
 
+<!-- Client section start -->
+<section id="client">
+  <div class="container">
+    <?php if (!empty($page['content_bottom'])): ?>
+        <?php print render($page['content_bottom']); ?>
+    <?php endif; ?>
+  </div>
+</section>  
+
 <footer id="footer">
   <div class="container">
     <div class="row">

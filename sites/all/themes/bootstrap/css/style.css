@@ -87,6 +87,9 @@ a:hover{
 	text-decoration: none;
 	cursor: pointer;
 }
+a:focus, a:hover {
+  color: #23527c;
+}
 a:focus{
 	outline: 0;
 }
@@ -768,7 +771,7 @@ h5{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#portfolio .row {
+#portfolio .row, .portfolio.row {
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -960,22 +963,22 @@ h5{
 
 /*TESTIMONIAL section
 ====================================*/
-#testimonial{
+.testimonial{
 	padding: 60px 0px 110px 0px;
 }
-#testimonial-carousel{
+.testimonial-carousel{
 	color: #333;
 	width: 70%;
 	margin: 0px auto;
 }
-#testimonial-carousel p{
+.testimonial-carousel p{
 	margin: 30px 0px;
 }
-#testimonial-carousel h3{
+.testimonial-carousel h3{
 	text-transform: uppercase;
 	font-weight: 700;
 }
-#testimonial-carousel  span{
+.testimonial-carousel  span{
 	font-style: italic;
 	color:#ccc;
 }
@@ -998,15 +1001,15 @@ h5{
 	border-radius: 100%;
 	margin: 0 auto;
 }
-#testimonial-carousel .carousel-indicators {
+.testimonial-carousel .carousel-indicators {
     bottom: -70px!important; 
     padding-bottom: 40px;
 }
-#testimonial-carousel .carousel-indicators .active{
+.testimonial-carousel .carousel-indicators .active{
 	background:#dda31e ;
 	
 }
-#testimonial-carousel .carousel-indicators li{
+.testimonial-carousel .carousel-indicators li{
 	border:1px solid #333;
 }
 
@@ -2060,3 +2063,8 @@ figure.effect-oscar:hover img {
     color: #fff;height:50px;min-width:150px;border-radius: 0px;font-size:18px;
 }
 .lne-hei30{line-height:30px;}
+
+/** Timeline **/
+article br, time br{
+	display:none;
+}
