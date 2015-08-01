@@ -41,9 +41,8 @@ function creative_tech_form_webform_client_form_44_alter(&$form, &$form_state) {
   );
 }*/
 function creative_tech_portfolio_form_submit($form, &$form_state) {
-  $_SESSION['portfolio-contact-done'] = true;
-  $link = $form_state['input']['previewlink'];
-  drupal_goto($link);
+  $_SESSION['portfolio-contact-success'] = TRUE;
+  $_SESSION['portfolio-contact-link'] = $form_state['input']['previewlink'];
 }
 /**
 * Implements hook_form_FORM_ID_alter()
