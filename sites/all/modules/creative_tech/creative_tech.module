@@ -1,7 +1,6 @@
 <?php
 /**
  * Implementation of hook_theme().
- * 
  */
 function creative_tech_theme() {
    return array(
@@ -11,7 +10,52 @@ function creative_tech_theme() {
       )
   );
 }
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function creative_tech_form_webform_client_form_44_alter(&$form, &$form_state) {
+  /*$html_id = str_replace('_', '-', $form['#form_id']);
+  $form['#prefix'] = '<div id="ajax-' . $html_id . '-wrapper">';
+  $form['#suffix'] = '</div>';
+  $form['actions']['submit']['#ajax'] = array(
+    'callback' => '_creative_tech_ajax_callback',
+    'wrapper' => 'ajax-' . $html_id . '-wrapper',
+    'event' => 'click',
+  );*/
+  $form['#action'] = 'portfolio-contact';
+  $form['#submit'][]  = 'creative_tech_portfolio_form_submit';
+}
+/**
+ * Ajax callback function for the forms.
+ */
+/*function _creative_tech_ajax_callback($form, $form_state) {
+  if (form_get_errors()) {
+    return $form;
+  }
+  ctools_include('ajax');
+  $commands = array();
+  $commands[] = ctools_ajax_command_reload();
+  return array(
+    '#type' => 'ajax',
+    '#commands' => $commands,
+  );
+}*/
+function creative_tech_portfolio_form_submit($form, &$form_state) {
+  $_SESSION['portfolio-contact-done'] = true;
+  $link = $form_state['input']['previewlink'];
+  drupal_goto($link);
+}
+/**
+* Implements hook_form_FORM_ID_alter()
+**/
+function creative_tech_form_contact_site_form_alter(&$form, $form_state, $form_id) {
+  $form['#submit'][]  = 'creative_tech_contact_form_submit';
+}
+/* Extra form submission handler */
 
+function creative_tech_contact_form_submit($form, &$form_state) {
+  $form_state['redirect'] = 'contact/contact-us';
+}
 /**
  * Implementation of hook_wysiwyg_editor_settings_alter().
  * 

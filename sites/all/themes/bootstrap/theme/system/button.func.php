@@ -23,9 +23,9 @@ function bootstrap_button($variables) {
     'btn-link',
   );
   $class_intersection = array_intersect($button_classes, $element['#attributes']['class']);
-  if (empty($class_intersection)) {
+/*  if (empty($class_intersection)) {
     $element['#attributes']['class'][] = 'btn-default';
-  }
+  }*/
 
   // Add in the button type class.
   $element['#attributes']['class'][] = 'form-' . $element['#button_type'];

@@ -169,7 +169,6 @@ function _bootstrap_colorize_button($text) {
     'btn-primary' => array(
       t('Save'),
       t('Confirm'),
-      t('Submit'),
       t('Search'),
     ),
     'btn-success' => array(

@@ -42,9 +42,4 @@ $form['message']['#title'] = '';
     <?php print drupal_render($form['form_token']); ?>
     <?php print drupal_render($form['form_id']); ?>
     <?php print drupal_render($form['orig_category']); ?>
-<?php
-	
-/*echo '<pre>';print_r($form);die;*/
-?>
-
 </div>

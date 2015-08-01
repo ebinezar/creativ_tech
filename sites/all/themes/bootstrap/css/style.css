@@ -771,6 +771,11 @@ h5{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.portfolio-items p {
+	line-height: 20px !important;
+}
+
 #portfolio .row, .portfolio.row {
     margin-left: -10px;
     margin-right: -10px;
@@ -2054,9 +2059,9 @@ figure.effect-oscar:hover img {
     border-color: #C47A00;
     color: #fff;height:50px;min-width:150px;border-radius: 0px;font-size:18px;float:right;
 }
-.btn-default:hover {
-	background-color: #F79C00;	
-}
+/*.btn-contact:hover {
+	background-color: #F79C00;
+}*/
 .btn-home-banner {
     background-color: #F79C00;
     border-color: #C47A00;
