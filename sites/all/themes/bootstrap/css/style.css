@@ -366,7 +366,8 @@ h5{
 
 #slider{
 	padding: 0px;
-	height: 700px;
+	/*height: 700px;*/
+	height: auto;
 	overflow: hidden;
 }
 .main-slide{
@@ -478,14 +479,14 @@ h5{
 .main-slide {background:#000000 !important;}
 .main-slide img{opacity: 0.5;}
 .main-slide .carousel-indicators{
-	top: 61%;
+	top: 85%;
 	height: 30px;
 }
 .carousel-indicators li{
 	width: 50px;
 }
 .carousel-control{
-	top: 40%;
+	top: 50%;
 	z-index: 2;
 	opacity: 1;
 }
